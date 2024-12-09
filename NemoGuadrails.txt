@@ -1,0 +1,22 @@
+!pip install nemoguardrails
+
+
+import yaml
+from nemoguardrails import RailsConfig
+from nemoguardrails.integrations.langchain.runnable_rails import RunnableRails
+
+config = RailsConfig.from_path('/config.yml')
+guardrails = RunnableRails(config)
+
+
+chain_with_guardrails = RunnableRails(config, runnable=rag_chain)
+
+
+
+
+
+Documentation links - https://docs.nvidia.com/nemo/guardrails/user_guides/langchain/chain-with-guardrails/README.html
+                      https://docs.nvidia.com/nemo/guardrails/user_guides/guardrails-library.html#llama-guard-based-content-moderation
+
+
+

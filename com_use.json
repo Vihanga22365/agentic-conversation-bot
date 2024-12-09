@@ -1,0 +1,33 @@
+[
+  {
+    "name": "computer",
+    "type": "computer_20241022",
+    "display_width_px": 1024,
+    "display_height_px": 768,
+    "display_number": 1
+  },
+  { "type": "bash_20241022", "name": "bash" },
+  { "name": "str_replace_editor", "type": "text_editor_20241022" },
+  {
+    "name": "create_credit_card_tool",
+    "description": "A tool that allows the agent to create a new credit card record in the system. You need to provide the cardName, description, and annualFee in the JSON body. Annual fee must be a valid decimal number. If not annual fee save as 0.00",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "cardName": {
+          "type": "string",
+          "description": "The name of the credit card"
+        },
+        "description": {
+          "type": "string",
+          "description": "A brief description of the credit card."
+        },
+        "annualFee": {
+          "type": "string",
+          "description": "The annual fee for the credit card as a string"
+        }
+      },
+      "required": ["cardName", "description", "annualFee"]
+    }
+  }
+]

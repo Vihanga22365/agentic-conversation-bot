@@ -1,0 +1,11 @@
+pre code.hljs {
+  background: none;
+  display: block;
+  overflow: hidden; /* Remove overflow */
+  white-space: pre-wrap; /* Allow text to wrap and display on multiple lines */
+  padding: 1em;
+}
+
+.css-9br0zo {
+  display: none !important;
+}

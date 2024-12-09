@@ -1,0 +1,44 @@
+[
+  {
+    "type": "missing",
+    "loc": ["accountNumber"],
+    "msg": "Field required",
+    "input": {
+      "account_number": "1234-4567-8907",
+      "merchant_name": "Toyota",
+      "amount": 99,
+      "date": "2024-05-24",
+      "description": "It's a duplicate transaction",
+      "status": "Pending"
+    },
+    "url": "https://errors.pydantic.dev/2.8/v/missing"
+  },
+  {
+    "type": "missing",
+    "loc": ["merchantName"],
+    "msg": "Field required",
+    "input": {
+      "account_number": "1234-4567-8907",
+      "merchant_name": "Toyota",
+      "amount": 99,
+      "date": "2024-05-24",
+      "description": "It's a duplicate transaction",
+      "status": "Pending"
+    },
+    "url": "https://errors.pydantic.dev/2.8/v/missing"
+  },
+  {
+    "type": "missing",
+    "loc": ["dateAndTime"],
+    "msg": "Field required",
+    "input": {
+      "account_number": "1234-4567-8907",
+      "merchant_name": "Toyota",
+      "amount": 99,
+      "date": "2024-05-24",
+      "description": "It's a duplicate transaction",
+      "status": "Pending"
+    },
+    "url": "https://errors.pydantic.dev/2.8/v/missing"
+  }
+]
